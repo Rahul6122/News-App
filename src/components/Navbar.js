@@ -1,25 +1,25 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navbar=(props)=>{
     return (
       <div>
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/">{props.title}</a>
+    <Link className="navbar-brand" to="/">{props.title}</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0"> 
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/general">Home</a>
+          <Link className="nav-link active" aria-current="page" to="/general">Home</Link>
         </li>
-        <li className='btn btn-sm btn-primary mx-2'style={{bottom:0,padding:0}}><a className='nav-link' href='/General'>General</a></li>
-        <li className='btn  btn-sm btn-danger mx-2'style={{bottom:0,padding:0}}><a className='nav-link' href='/Science'>Science</a></li>
-        <li className='btn  btn-sm btn-success mx-2'style={{bottom:0,padding:0}}><a className='nav-link' href='/Business'>Business</a></li>
-        <li className='btn  btn-sm btn-secondary my-0 mx-2'style={{bottom:0,padding:0}}><a className='nav-link' href='/Technology'>Technology</a></li> 
-        <li className='btn  btn-sm btn-warning mx-2' style={{bottom:0,padding:0}}><a className='nav-link' href='/Sports'>Sports</a></li>
+        <li className='btn btn-sm btn-primary mx-2'style={{bottom:0,padding:0}}><Link className='nav-link' to='/General'>General</Link></li>
+        <li className='btn  btn-sm btn-danger mx-2'style={{bottom:0,padding:0}}><Link className='nav-link' to='/Science'>Science</Link></li>
+        <li className='btn  btn-sm btn-success mx-2'style={{bottom:0,padding:0}}><Link className='nav-link' to='/Business'>Business</Link></li>
+        <li className='btn  btn-sm btn-secondary my-0 mx-2'style={{bottom:0,padding:0}}><Link className='nav-link' to='/Technology'>Technology</Link></li> 
+        <li className='btn  btn-sm btn-warning mx-2' style={{bottom:0,padding:0}}><Link className='nav-link' to='/Sports'>Sports</Link></li>
       </ul>
       
     </div>
