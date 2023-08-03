@@ -13,8 +13,6 @@ import LoadingBar from 'react-top-loading-bar';
 
 
 const App=()=>  {
-   const apikey="ec564bcfff73459bb9434f89c71d34f4" 
-
    const[progress,setProgress] = useState(0);
 
     return ( 
@@ -26,11 +24,11 @@ const App=()=>  {
         color='#f11946'  
         progress={progress}
       />
-      <News setProgress ={setProgress} apikey={apikey}  key='General' pagesize={10} category='General'/>
-      <News setProgress ={setProgress} apikey={apikey} key='Technology' pagesize={10} category='Technology'/>
-      <News setProgress ={setProgress} apikey={apikey} key='Sports' pagesize={10} category='Sports'/>
-      <News setProgress ={setProgress} apikey={apikey} key='Business' pagesize={10} category='Business'/>
-      <News setProgress ={setProgress} apikey={apikey} key='Science' pagesize={10} category='Science'/>
+      <News setProgress ={setProgress}   key='General' pagesize={10} category='General'/>
+      <News setProgress ={setProgress}  key='Technology' pagesize={10} category='Technology'/>
+      <News setProgress ={setProgress}  key='Sports' pagesize={10} category='Sports'/>
+      <News setProgress ={setProgress}  key='Business' pagesize={10} category='Business'/>
+      <News setProgress ={setProgress}  key='Science' pagesize={10} category='Science'/>
         {/* <Routes>
           <Route exact path='/General' element={<News setProgress ={setProgress} apikey={apikey}  key='General' pagesize={10} category='General'/>}></Route> */}
           {/* <Route exact path='/Business' element={<News setProgress ={setProgress} apikey={apikey} key='Business' pagesize={10} category='Business'/>}></Route>
